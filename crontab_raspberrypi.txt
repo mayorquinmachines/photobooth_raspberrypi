@@ -1,0 +1,3 @@
+@reboot sleep 60 && /home/pi/my_photobooth.sh >> /home/pi/log_photobooth.txt 2>&1
+@reboot sleep 60 && /usr/bin/python /home/pi/picam_button.py >> /home/pi/log_picam_button.txt 2>&1
+@reboot sleep 60 && /usr/bin/python /home/pi/led_lights.py >> /home/pi/log_led_lights.txt 2>&1
