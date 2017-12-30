@@ -12,5 +12,5 @@ while True:
     if input_state == False:
         tm_stmp = datetime.now().strftime("%Y_%m_%d_%H_%M")
         time.sleep(5)
-        subprocess.call('raspistill -o /home/pi/photos/{}.jpg -rot 90'.format(tm_stmp), shell=True)
+        subprocess.call('raspistill -o /home/pi/Pictures/{}.jpg -rot 90'.format(tm_stmp), shell=True)
         time.sleep(0.2)
